@@ -1,0 +1,15 @@
+listeners:
+    default:
+        max_connections: 1000
+        type: tcp
+    my-tcp-1:
+        bind: 127.0.0.1:1883
+    my-tcp-2:
+        bind: 192.168.1.100:1884
+timeout-disconnect-delay: 2
+topic-check:
+  enabled: true
+  plugins:
+    - topic_taboo
+auth:
+  allow-anonymous: true

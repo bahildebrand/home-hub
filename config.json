@@ -1,0 +1,10 @@
+listeners:
+    default:
+        max-connections: 50000
+        type: tcp
+    my-tcp-1:
+        bind: 127.0.0.1:1883
+    my-tcp-2:
+        bind: 1.2.3.4:1884
+        max-connections: 1000
+timeout-disconnect-delay: 2
